@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/screens/home_screen.dart';
 import 'screens/tic_tac_toe_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home: TicTacToe(),
+      home: Home(),
       debugShowCheckedModeBanner: false,
     );
   }
