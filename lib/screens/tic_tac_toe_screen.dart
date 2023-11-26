@@ -117,12 +117,12 @@ class _TicTacToeState extends State<TicTacToe> {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      SizedBox(height: 20),
+                     const  SizedBox(height: 20),
 
                       Container(
-                        padding: EdgeInsets.all(15.0),
+                        padding:const EdgeInsets.all(15.0),
                         decoration: BoxDecoration(
-                          color: winBackgroundColor ?? Colors.transparent,
+                          color: winBackgroundColor,
                           borderRadius: BorderRadius.circular(
                               8), // Optional: Set border radius
                         ),
@@ -154,7 +154,7 @@ class _TicTacToeState extends State<TicTacToe> {
                   const SizedBox(height: 50),
                   Text(
                     'Player X Wins: $playerXWins',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontFamily: 'Quicksand',
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
@@ -163,7 +163,7 @@ class _TicTacToeState extends State<TicTacToe> {
                   ),
                   Text(
                     'Player O Wins: $playerOWins',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontFamily: 'Quicksand',
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
