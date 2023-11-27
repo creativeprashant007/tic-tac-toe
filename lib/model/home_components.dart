@@ -5,5 +5,9 @@ class HomeComponents {
   VoidCallback? callback;
   String? image;
 
-  HomeComponents({required this.title, required this.callback, this.image});
+  HomeComponents({
+    required this.title,
+    required this.callback,
+    this.image,
+  });
 }
