@@ -28,6 +28,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
       home: Home(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        'tic_tac_toe_screen': (context) => TicTacToe()
+      },
       debugShowCheckedModeBanner: false,
     );
   }

@@ -12,7 +12,9 @@ class _HomeState extends State<Home> {
   List<HomeComponents> homeComp = [
     HomeComponents(
       title: "New Game",
-      callback: () {},
+      callback: () {
+        // Navigator.pushNamed(context, '/tic_tac_toe_screen');
+      },
     ),
     HomeComponents(
       title: "Statistics",
@@ -34,7 +36,10 @@ class _HomeState extends State<Home> {
       body: ListView.separated(
           itemBuilder: (context, index) {
             var homeItem = homeComp[index];
-            return ListTile(title: Text(homeItem.title!));
+            return ListTile(
+              title: Text(homeItem.title!),
+              onTap: () => Navigator.pushNamed(context, '/tic_tac_toe_screen'),
+            );
           },
           separatorBuilder: (_, __) => const SizedBox(
                 height: 10,
