@@ -9,7 +9,7 @@ void main() async {
   // Reset scores when the app starts
   await resetScores();
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 Future<void> resetScores() async {
@@ -19,6 +19,8 @@ Future<void> resetScores() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,11 +29,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home:const Home(),
+      home: const Home(),
       initialRoute: '/',
       routes: {
-        '/': (context) =>const Home(),
-        'tic_tac_toe_screen': (context) =>const TicTacToe()
+        '/': (context) => const Home(),
+        'tic_tac_toe_screen': (context) => const TicTacToe()
       },
       debugShowCheckedModeBanner: false,
     );
