@@ -18,7 +18,7 @@ class _TicTacToeState extends State<TicTacToe> {
   bool gameEnded = false;
   int playerXWins = 0;
   int playerOWins = 0;
-  Color winBackgroundColor = Color.fromARGB(255, 255, 255, 2);
+  Color winBackgroundColor = const Color.fromARGB(255, 255, 255, 2);
 
   @override
   void initState() {
