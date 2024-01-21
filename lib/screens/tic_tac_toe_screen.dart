@@ -38,7 +38,7 @@ class _TicTacToeState extends State<TicTacToe> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Tic Tac Toe',
+          'Multi Players',
           style: TextStyle(
               fontFamily: 'Quicksand',
               fontSize: 30,
