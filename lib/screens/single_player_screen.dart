@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tic_tac_toe/components/board.dart';
 
-class TicTacToe extends StatefulWidget {
-  const TicTacToe({super.key});
+class TicTacToeSinglePlayer extends StatefulWidget {
+  const TicTacToeSinglePlayer({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _TicTacToeState createState() => _TicTacToeState();
+  _TicTacToeSinglePlayerState createState() => _TicTacToeSinglePlayerState();
 }
 
-class _TicTacToeState extends State<TicTacToe> {
+class _TicTacToeSinglePlayerState extends State<TicTacToeSinglePlayer> {
   List<List<String>> board = List.generate(3, (_) => List.filled(3, ''));
   String currentPlayer = 'X';
   bool gameEnded = false;
@@ -38,7 +38,7 @@ class _TicTacToeState extends State<TicTacToe> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Multi Players',
+          'Single Player',
           style: TextStyle(
               fontFamily: 'Quicksand',
               fontSize: 30,
