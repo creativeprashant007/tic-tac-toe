@@ -24,7 +24,7 @@ class _TicTacToeSinglePlayerState extends State<TicTacToeSinglePlayer> {
   void initState() {
     super.initState();
     // Set the initial player randomly
-    currentPlayer = ['X', 'O'][Random().nextInt(2)];
+    
   }
 
   Future<void> saveStats() async {
