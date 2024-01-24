@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const Home(),
         'tic_tac_toe_screen': (context) => const TicTacToe(),
-        'single_player': (context) => const TicTacToeSinglePlayer()
+        'single_player': (context) =>  TicTacToeSinglePlayer()
       },
       debugShowCheckedModeBanner: false,
     );
