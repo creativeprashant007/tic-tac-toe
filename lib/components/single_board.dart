@@ -5,7 +5,7 @@ class SingleBoardWidget extends StatelessWidget {
   final List<List<String>> board;
   final Function(int, int) onMove;
 
-  SingleBoardWidget({
+  const SingleBoardWidget({
     Key? key,
     required this.board,
     required this.onMove,
